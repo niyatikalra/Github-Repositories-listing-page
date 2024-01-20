@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.user-info img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.user-info h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.user-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.repo-section {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.repo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.repo-search {
+  display: flex;
+  align-items: center;
+}
+
+.repo-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.repo-item {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 47%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.repo-item:hover {
+  transform: translateY(-5px);
+}
+.topic {
+  list-style: none;
+  padding: 0;
+}
+
+.topic li {
+  display: inline-block;
+  margin: 4px 4px;
+  padding: 4px 9px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.topic li:hover {
+  background-color: #007bb5;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 22px;
+}
+.pagination button {
+  margin: 0px 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #555;
+}
+.active {
+  background-color: #3498db !important;
+  color: #fff !important;
+  border: 1px solid #007bff !important;
+}
+@media screen and (max-width: 1411px) {
+  .repo-item {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .repo-item {
+    width: 100%;
+  }
+}
